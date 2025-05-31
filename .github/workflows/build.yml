@@ -42,7 +42,7 @@ jobs:
         run: chmod +x gradlew
         
       - name: Build with Gradle
-        run: ./gradlew build
+        run: ./gradlew build --stacktrace
   
       - name: Upload Build Artifact
         uses: actions/upload-artifact@v4
