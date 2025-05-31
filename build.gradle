@@ -82,7 +82,7 @@ repositories{
 }
 
 dependencies {
-    minecraft 'net.neoforged:neoforge:21.1.172'
+    minecraft 'net.neoforged:neoforge:21.1.615'
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 
     // useful for debugging performance problems
