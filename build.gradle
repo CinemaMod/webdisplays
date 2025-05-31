@@ -22,7 +22,7 @@ mixin.add sourceSets.main, "webdisplays.refmap.json"
 
 // neoforge gradle
 minecraft {
-    mappings channel: 'parchment', version: '2023.06.26-1.20.1'
+    mappings channel: 'parchment', version: '2024.11.17-1.21.1'
 
     accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
 
@@ -48,7 +48,6 @@ minecraft {
             property 'mixin.env.refMapRemappingFile', "${project.projectDir}/build/createSrgToMcp/output.srg"
             workingDirectory project.file('run')
             arg "-mixin.config=webdisplays.mixins.json"
-
 
             property 'forge.logging.console.level', 'debug'
 
@@ -83,7 +82,7 @@ repositories{
 }
 
 dependencies {
-    minecraft 'net.neoforged:forge:1.20.1-47.1.65'
+    minecraft 'net.neoforged:neoforge:21.1.172'
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 
     // useful for debugging performance problems
